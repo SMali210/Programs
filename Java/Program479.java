@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program480
+class Program479
 {
       public static void main(String arg[])
       {
@@ -15,17 +15,15 @@ class Program480
             System.out.println(Arr.length);
 
             int Count = 0;
-
-           for(int i = 0;i<Arr.length;i++)
+            int i = 0;
+            while(i < Arr.length)
             {
-                  if((Arr[i] >='A')&&(Arr[i]<='Z'))
+                  if((Arr[i] >='a')&&(Arr[i]<='z'))
                   {
-                       Arr[i] =(char)(Arr[i] + 32);
+                        Count++;
                   }
-                  
+                  i++;
             }
-            String output = new String(Arr);  // convert charchter to string
-            System.out.println(output);
-            
+            System.out.println("Small charcter are :"+Count);
       }
 }

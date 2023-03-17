@@ -1,31 +1,17 @@
 import java.util.*;
 
-class Program479
+class Program481
 {
-    public static void main(String Arg[])
-    {
-        Scanner sobj = new Scanner(System.in);
+      public static void main(String arg[])
+      {
+            Scanner sobj = new Scanner(System.in);
 
-        System.out.println("Enter string");
-        String str = sobj.nextLine();
+            System.out.println("Enter the String");
+            String str = sobj.nextLine();
 
-        char Arr[] = str.toCharArray();
+            String newstr = str.trim(); // inbuilt method to removed  aadhi che sevatche white sapce
 
-        System.out.println(str.length());
-        System.out.println(Arr.length);
-
-        int Count = 0;
-
-        int i = 0;
-        while(i < Arr.length)
-        {
-            if((Arr[i] >= 'a') && (Arr[i] <= 'z'))
-            {
-                Count++;
-            }
-            i++;
-        }
-
-        System.out.println("Small characters are : "+Count);
-    }
+            String Arr[] = newstr.split(" ");
+            System.out.println("Numbers of words are :"+Arr.length);
+      }
 }
